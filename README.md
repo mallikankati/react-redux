@@ -1,5 +1,7 @@
 # react-redux
-Sample application with react and redux framework
+Sample application with react and redux framework. In this application we retrieve video and comment details for a given Youtube video id and display it. 
+
+To get general idea, there is a mockup located in mockup.pdf.
 
 In order to run application require following steps
 
@@ -13,20 +15,8 @@ Note: npm need to be install before execute following steps
 2) Install babel
 
    npm i babel-core babel-loader babel-preset-es2015 babel-preset-react -S
-
-3) Need to create .babelrc file
-    Linux
-		touch .babelrc
-
-	Windows
-	Create a b.babelrc file then in CMD
-	ren b.babelrc .babelrc
-
-	add following content to .babelrc
-	{
-  		"presets" : ["es2016", "react"]
-	}
-4) Install react, react-dom and react-router
+   
+3) Install react, react-dom and react-router
 
     npm i react react-dom -S
 
