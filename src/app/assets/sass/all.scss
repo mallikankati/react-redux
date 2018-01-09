@@ -1,0 +1,76 @@
+@import "colors";
+//@import "keyframes";
+@import "mixins";
+$verdana: Verdana, Helvetica, Arial, sans-serif;
+
+.caption .avatar, .v-title .avatar, .c-info .avatar, .comments .avatar {
+    .avatar-image {
+        background-size:cover;
+        width:100%;
+        height: 100%;
+        border-radius: 100%;
+        background-position: center center;
+    }
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: $body-color;
+    font: 12px/14px $verdana;
+    font-weight: 300;
+    min-width: 320px;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: none;
+}
+
+.container {
+     display:flex;
+     max-width:628px;
+     height:100%;
+     margin:0 auto;
+     align:vertical;
+     padding-left:8px;
+	 padding-right:8px;
+
+     background-color:$container-color;
+
+     &::before{
+         display:table;
+         content:"";
+     }
+
+     &::after{
+         display:table;
+         clear:both;
+         content:"";
+     }
+}
+
+.v-display {
+	position: absolute;
+	float:left;
+	display:inline-block;
+	width:auto;
+	height:auto;
+	background-color:#BCBCBC;
+}
+
+.v-title {
+	position: absolute;
+	display:inline-block;
+	float:left;
+	margin:0 auto;
+	height:60px;
+	background-color:#FCFCFC;
+}
