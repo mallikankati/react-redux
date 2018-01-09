@@ -5,7 +5,7 @@ To get general idea, there is a mockup located in `mockup.pdf`.
 
 In order to run application require following steps
 
-######one time setup
+###### One time setup
 Note: npm need to be install before execute following steps
 
 1) Install webpack
