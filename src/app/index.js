@@ -1,22 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import VideoDisplay from './components/VideoDisplay';
-import VideoTitle from './components/VideoTitle';
-import ChannelInfo from './components/ChannelInfo';
-import Comments from './components/Comments';
+import {Provider} from 'react-redux';
+import {BrowserRouter} from 'react-router-dom';
 
-export default class App extends React.Component {
-  render () {
-    return (
-        <div className="container">
-            <VideoDisplay />
-            <VideoTitle />
-            <ChannelInfo />
-            <Comments />
-        </div>
-    );
-  }
-}
+import configureStore from './store/configureStore';
+import App from './components/App';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+const store = configureStore();
+
+ReactDOM.render(
+    <Provider store={store}>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </Provider>,
+    document.getElementById('app'));

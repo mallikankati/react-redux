@@ -15,6 +15,11 @@ module.exports = {
             APP_DIR + "/assets/sass/all.scss"
         ]
     },
+    resolve: {
+        alias: {
+            config: path.join(__dirname, 'src/config/config.json')
+        }
+    },
     output: {
         path: BUILD_DIR,
         filename: "index.min.js"
