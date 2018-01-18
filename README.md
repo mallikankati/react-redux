@@ -5,7 +5,7 @@ To get general idea, there is a mockup located in mockup.pdf.
 
 In order to run the application, require following steps
 
-###one time setup
+### one time setup
 
 Note: npm need to be install before execute following steps
 
