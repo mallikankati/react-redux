@@ -1,13 +1,13 @@
 # react-redux
 Sample application with react and redux framework. In this application we retrieve video and comment details for a given Youtube video id and display it.
 
-To get general idea, there is a mockup located in mockup.pdf.
+To get general idea, there is a mockup located in `mockup.pdf`.
 
 In order to run the application, require following steps
 
 ### one time setup
 
-Note:npm need to be install before execute following steps
+**Note:** npm need to be install before execute following steps
 
 1) Install webpack
   
