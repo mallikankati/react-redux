@@ -7,7 +7,7 @@ In order to run the application, require following steps
 
 ### one time setup
 
-Note: npm need to be install before execute following steps
+Note:npm need to be install before execute following steps
 
 1) Install webpack
 
@@ -15,7 +15,7 @@ Note: npm need to be install before execute following steps
 
 2) Install babel
 
-   npm i babel-core babel-loader babel-preset-es2015 babel-preset-react --save-dev
+    npm i babel-core babel-loader babel-preset-es2015 babel-preset-react --save-dev
 
 3) Install react, react-dom and react-router
 
