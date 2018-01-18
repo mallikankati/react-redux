@@ -3,7 +3,7 @@ Sample application with react and redux framework. In this application we retrie
 
 To get general idea, there is a mockup located in `mockup.pdf`.
 
-In order to run application require following steps
+In order to run the application, require following steps
 
 ###### One time setup
 Note: npm need to be install before execute following steps
