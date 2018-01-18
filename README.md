@@ -10,11 +10,11 @@ Note: npm need to be install before execute following steps
 
 1) Install webpack
 
-   npm install -S webpack
+   npm install webpack --save-dev
 
 2) Install babel
 
-   npm i babel-core babel-loader babel-preset-es2015 babel-preset-react -S
+   npm i babel-core babel-loader babel-preset-es2015 babel-preset-react --save-dev
 
 3) Install react, react-dom and react-router
 
@@ -26,7 +26,7 @@ Note: npm need to be install before execute following steps
 
 6) Install extract-text-webpack-plugin, css-loader, style-loader, sass-loader and node-sass
 
-    npm i css-loader style-loader sass-loader node-sass extract-text-webpack-plugin -S
+    npm i css-loader style-loader sass-loader node-sass extract-text-webpack-plugin --save-dev
 
 7) Install webpack-dev-server to test locally while developing app
 
