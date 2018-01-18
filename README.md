@@ -21,10 +21,10 @@ Note:npm need to be install before execute following steps
   npm i babel-core babel-loader babel-preset-es2015 babel-preset-react --save-dev
   ```
   
-3) Install react, react-dom and react-router
+3) Install react, react-dom and react-router-dom
 
   ```
-  npm i react react-dom -S
+  npm i react react-dom react-router-dom -S
   ```
   
 5) Install redux and react-redux
