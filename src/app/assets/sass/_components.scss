@@ -1,0 +1,191 @@
+//////////////////////////////
+///VIDEO TITLE
+
+$verdana: Verdana, Helvetica, Arial, sans-serif;
+
+.vtitle-details{
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+
+.vtitle-details > * {
+    font-family: $verdana;
+    margin-left: 8px;
+}
+
+.vtitle-text{
+    font-size: 13px;
+    font-weight: bold;
+    color:$vtitle-txt-color;
+    margin-top: 6px;
+    opacity: 0.9;
+}
+
+
+.vtitle-subtext{
+    font-size: 12px;
+    font-weight: regular;
+    color:$sub-txt-color;
+    opacity: 0.6;
+    margin-top: 7px;
+}
+
+
+//////////////////////////////
+///CHANNEL INFORMATION
+
+.cinfo-avatar{
+   flex: 0 0 auto;
+   width: 30px;
+   height: 30px;
+   background-color: orange;
+   padding: 6px;
+   background-size: cover;
+   border-radius: 100%;
+   background-position: center center;
+   margin-left: 8px;
+   margin-top: 8px;
+}
+
+.cinfo-details{
+    flex: 0 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+
+.cinfo-details > * {
+    font-family: $verdana;
+    margin-left: 8px;
+}
+
+.cinfo-text{
+    font-size: 13px;
+    font-weight: bold;
+    color:$vtitle-txt-color;
+    margin-top: 6px;
+    opacity: 0.9;
+}
+
+
+.cinfo-subtext{
+    font-size: 12px;
+    font-weight: regular;
+    color:$sub-txt-color;
+    opacity: 0.6;
+    margin-top: 7px;
+}
+
+
+
+//////////////////////////////
+///COMMENTS DETAILS
+
+.vcomments-summary{
+    flex: 0 0 auto;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $grey-hr;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.vcomments-summary > * {
+    font-family: $verdana;
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    color:$vtitle-txt-color;
+    margin-top: 3px;
+    opacity: 0.9;
+}
+
+.vcomments-total {
+    width: 7%;
+    margin-top: 7px;
+}
+
+.vcomments-summary-txt{
+    margin-top: 7px;
+    margin-left: 8px;
+}
+
+.vcomments-box{
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.vcomment-details{
+    border-bottom: 1px solid $grey-hr;
+    padding-bottom: 15px
+}
+
+.vcomment-header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+}
+
+.vcomment-header > * {
+    font-family: $verdana;
+    margin-left: 8px;
+}
+
+.vcomment-avatar{
+    flex: 0 0 auto;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    padding: 6px;
+    background-size: cover;
+    border-radius: 100%;
+    background-position: center center;
+    margin-left: 8px;
+}
+
+.vcomment-author-name{
+    font-size: 13px;
+    font-weight: bold;
+    color:$vtitle-txt-color;
+    text-transform: uppercase;
+    margin-left: 12px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.vcomment-time{
+    text-align: right;
+    margin-left: 57%;
+    margin-top: 10px;
+    font-family: $verdana;
+    font-size: 13px;
+    font-weight: regular;
+    color: $normal-txt-color;
+    opacity: 0.9;
+}
+
+.vcomment-text {
+    margin-left: 8px;
+    margin-top: 10px;
+    font-family: $verdana;
+    font-size: 15px;
+    font-weight: regular;
+    color: $normal-txt-color;
+    opacity: 0.9;
+}

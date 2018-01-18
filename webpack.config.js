@@ -40,16 +40,24 @@ module.exports = {
             test: /\.js?$/,
             exclude: /(node_modules|bower_components)/,
             use: [{
-                loader: 'babel-loader',
-                options: {
-                    presets: ['react', 'es2015'],
-                    //plugins: ['react-html-attrs', 'transform-decorators-legacy', 'transform-class-properties'],
-                }
+                    loader: 'babel-loader',
+                    options: {
+                         presets: ['react', 'es2015'],
+                         plugins: ['react-hot-loader/babel']
+                         //plugins: ['react-html-attrs', 'transform-decorators-legacy', 'transform-class-properties'],
+                    }
             }]
         }]
     },
     plugins: debug ? [
-        new ExtractTextPlugin('[name].css')
+        new ExtractTextPlugin('[name].css'),
+        new webpack.NamedModulesPlugin(),
+        //new webpack.CleanWebpackPlugin(['dist'])
+        //new webpack.HtmlWebpackPlugin({
+        //    title: 'Hot Module Replacement'
+        //}),
+        new webpack.HotModuleReplacementPlugin()
+
     ] : [
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurenceOrderPlugin(),

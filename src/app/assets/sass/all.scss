@@ -1,9 +1,25 @@
 @import "colors";
 //@import "keyframes";
 @import "mixins";
-$verdana: Verdana, Helvetica, Arial, sans-serif;
+@import "layout";
+@import "components";
 
-.caption .avatar, .v-title .avatar, .c-info .avatar, .comments .avatar {
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+    margin: 0;
+    background-color: $body-bg-color;
+    font: 12px/14px $verdana;
+    font-weight: 300;
+    min-width: 320px;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: none;
+}
+
+/*.caption .avatar, .v-title .avatar, .c-info .avatar, .comments .avatar {
     .avatar-image {
         background-size:cover;
         width:100%;
@@ -73,4 +89,4 @@ body {
 	margin:0 auto;
 	height:60px;
 	background-color:#FCFCFC;
-}
+}*/
