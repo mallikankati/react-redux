@@ -1,3 +1,8 @@
+@import "colors";
+
+//////////////////////////////
+///VIDEO THUMBNAIL
+
 //////////////////////////////
 ///VIDEO TITLE
 
@@ -39,15 +44,24 @@ $verdana: Verdana, Helvetica, Arial, sans-serif;
 
 .cinfo-avatar{
    flex: 0 0 auto;
-   width: 30px;
-   height: 30px;
-   background-color: orange;
-   padding: 6px;
+   width: 38px;
+   height: 38px;
+   background-color: $avatar-bg-color;
+   //padding: 6px;
    background-size: cover;
    border-radius: 100%;
    background-position: center center;
    margin-left: 8px;
    margin-top: 8px;
+
+   .cinfo-avatar-image {
+        width: 34px;
+        height: 34px;
+        background-size: cover;
+        border-radius: 100%;
+        background-position: center center;
+        margin: 2px;
+   }
 }
 
 .cinfo-details{
@@ -67,6 +81,7 @@ $verdana: Verdana, Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: bold;
     color:$vtitle-txt-color;
+    text-transform: uppercase;
     margin-top: 6px;
     opacity: 0.9;
 }
@@ -127,6 +142,8 @@ $verdana: Verdana, Helvetica, Arial, sans-serif;
     padding: 6px;
     list-style: none;
     box-sizing: border-box;
+    overflow-y: scroll;
+    height: 93%;
 }
 
 .vcomment-details{
@@ -149,14 +166,29 @@ $verdana: Verdana, Helvetica, Arial, sans-serif;
 
 .vcomment-avatar{
     flex: 0 0 auto;
-    width: 30px;
-    height: 30px;
-    background-color: orange;
-    padding: 6px;
+    width: 38px;
+    height: 38px;
+    background-color: $avatar-bg-color;
+    //padding: 6px;
     background-size: cover;
     border-radius: 100%;
     background-position: center center;
+    margin-top: 6px;
     margin-left: 8px;
+
+    .vcomment-avatar-image {
+        width: 34px;
+        height: 34px;
+        background-size: cover;
+        border-radius: 100%;
+        background-position: center center;
+        margin: 2px;
+   }
+}
+
+.vcomment-author {
+    display: flex;
+    flex-direction: column;
 }
 
 .vcomment-author-name{
@@ -170,13 +202,13 @@ $verdana: Verdana, Helvetica, Arial, sans-serif;
 }
 
 .vcomment-time{
-    text-align: right;
-    margin-left: 57%;
-    margin-top: 10px;
+    text-align: left;
+    margin-top: 6px;
+    margin-left: 12px;
     font-family: $verdana;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: regular;
-    color: $normal-txt-color;
+    color: $sub-txt-color;
     opacity: 0.9;
 }
 
@@ -186,6 +218,7 @@ $verdana: Verdana, Helvetica, Arial, sans-serif;
     font-family: $verdana;
     font-size: 15px;
     font-weight: regular;
+    word-wrap: break-word;
     color: $normal-txt-color;
     opacity: 0.9;
 }

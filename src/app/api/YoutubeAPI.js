@@ -1,10 +1,11 @@
-import config from '../../config'
+import config from '../../config/config'
 
 export default class YoutubeAPI{
 
     static getVideoData(){
         const URL = config.yt.API_URL + '/v3/videos';
         const qParams = '?key='+config.yt.API_KEY+'&part=id,snippet,status,statistics,liveStreamingDetails&id=' + config.yt.VIDEO_ID;
+        console.log('URL:' + URL + qParams);
         const request = new Request(URL + qParams, {
             method: 'GET'
         });
@@ -18,7 +19,8 @@ export default class YoutubeAPI{
 
     static getChannelData(channelId){
         const URL = config.yt.API_URL + '/v3/channels';
-        const qParams = '?key='+config.yt.API_KEY+'&part=id,snippet,status,statistics,topicDetails,brandingSettings&id=' + channelId;
+        const qParams = '?key='+config.yt.API_KEY+'&part=id,snippet,status,statistics,topicDetails&id=' + channelId;
+        console.log('URL:' + URL + qParams);
         const request = new Request(URL + qParams, {
             method: 'GET'
         });
@@ -33,6 +35,7 @@ export default class YoutubeAPI{
     static getVideoComments(){
         const URL = config.yt.API_URL + '/v3/commentThreads';
         const qParams = '?key='+config.yt.API_KEY+'&part=snippet&maxResults=100&videoId=' + config.yt.VIDEO_ID;
+        console.log('URL:' + URL + qParams);
         const request = new Request(URL + qParams, {
             method: 'GET'
         });
